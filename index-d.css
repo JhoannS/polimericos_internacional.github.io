@@ -343,7 +343,7 @@ header.abajo {
 
 .presentacion-portafolio {
     margin: 30px 0;
-    background: url("../img/portafolio.jpg");
+    background: url("./img/portafolio.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 200px 20px 20px;
@@ -367,7 +367,7 @@ header.abajo {
 }
 
 .portada-img {
-    background: url("../img/zeuz.jpeg");
+    background: url("./img/zeuz.jpeg");
     width: 49%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -423,7 +423,7 @@ header.abajo {
 
 .servicios {
     width: 100%;
-    background: url("../img/servicios.jpg");
+    background: url("./img/servicios.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -563,7 +563,7 @@ header.abajo {
 }
 
 .about-img {
-    background: url("../img/pintando.jpeg");
+    background: url("./img/pintando.jpeg");
     width: 49%;
     min-height: 100vh;
     background-repeat: no-repeat;
