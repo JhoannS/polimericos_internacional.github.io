@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gold: #C7A438;
+    --black: #1E1E1E;
+    --caoba: #272727;
+    --white: #EDEDED;
+    --white-gray: #D9D9D9;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --bold: 600;
+    --semi: 500;
+    --light: 400;
+    --font: "Poppins", sans-serif;
+    --radius_50: 50%;
+    --radius_40: 40px;
+    --raidus_35: 35px;
+    --radius_30: 30px;
+    --radius_15: 15px;
+
+}
+
+.portafolio-dial{
+    padding: 40px;
+    position: relative;
+    margin-top: 90px;
+    min-height: 100%;
+}
+.portafolio-dial h1 a{
+    color: var(--gold);
+}
+.cursos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cursos a{
+    width: 32%;
+    text-decoration: none;
+}
+.card {
+    margin:20px 5px;
+    width: 32%;
+    height: 254px;
+    background: var(--caoba);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .card:hover{
+    background-color: var(--gold);
+    cursor: pointer;
+  }
+  .card:hover h2{
+    transform: translateY(-20px);
+  }
+  .card h2 {
+    z-index: 1;
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    background:var(--gold);
+    height: 1000%;
+    animation: rotBGimg 5s linear infinite;
+    transition: all 0.5s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: var(--caoba);
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  }  */
+  
+  
